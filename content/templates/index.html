@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load markdown_deux_tags %}
 {% block news %}
-<div id="news" class="grid_11">
+<div id="news" class="col-md-8">
     {% for n in news %}
-      {{n}}
+        {{n.text|markdown}}
     {% endfor %}
 </div>
-<div id="updates" class="grid_5">
+<div id="updates" class="col-md-4">
     Updates
 </div>
 {% endblock %}

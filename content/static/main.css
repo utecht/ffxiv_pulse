@@ -4,6 +4,7 @@
     top: 0px;
     left: 0px;
     width: 100%;
+    z-index: 50;
 }
 
 #small_logo {
@@ -62,4 +63,8 @@
 #updates {
     background-color: #8e44ad;
     border-radius: 5px;
+}
+
+#footer {
+    width: 100%;
 }

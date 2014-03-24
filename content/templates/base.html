@@ -4,9 +4,7 @@
     <head>
         <title>FFXIV Pulse</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="{% static "reset.css" %}" />
-        <link rel="stylesheet" type="text/css" href="{% static "text.css" %}" />
-        <link rel="stylesheet" type="text/css" href="{% static "960.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "bootstrap.min.css" %}" />
         <link rel="stylesheet" type="text/css" href="{% static "main.css" %}" />
         <script src="{% static "jquery.min.js" %}"></script>
         <script src="{% static "top_scroller.js" %}"></script>
@@ -40,11 +38,11 @@
             </div>
         </div>
         <div class="clear"></div>
-        <div id="news_container" class="container_16">
+        <div id="news_container" class="container">
             {% block news %}{% endblock %}
             <div class="clear"></div>
 
-            <div id="footer" class="grid_16">
+            <div id="footer" class="col-md-12">
                 <p><center>&#169;2014 FFXIV Pulse </center></p>
             </div>
         </div>
