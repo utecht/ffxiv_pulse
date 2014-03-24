@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FFXIV Pulse</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="{% static "reset.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "text.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "960.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "main.css" %}" />
+        <script src="{% static "jquery.min.js" %}"></script>
+        <script src="{% static "top_scroller.js" %}"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">FFXIV Pulse</div>
+            <div id="top_right">
+                <div id="banner">Banner Image here</div>
+                <div id="nav">
+                    <ul>
+                        <li>Features</li>
+                        <li>News</li>
+                        <li>Guides</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="small_header">
+            <div id="small_logo">FFXIV Pulse</div>
+            <div id="top_right">
+                <div id="nav">
+                    <ul>
+                        <li>Features</li>
+                        <li>News</li>
+                        <li>Guides</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="news_container" class="container_16">
+            {% block news %}{% endblock %}
+            <div class="clear"></div>
+
+            <div id="footer" class="grid_16">
+                <p><center>&#169;2014 FFXIV Pulse </center></p>
+            </div>
+        </div>
+    </body>
+</html>

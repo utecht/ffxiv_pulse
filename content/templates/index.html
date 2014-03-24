@@ -1,4 +1,11 @@
-Hello World!
-{% for n in news %}
-  {{n}}
-{%endfor%}
+{% extends "base.html" %}
+{% block news %}
+<div id="news" class="grid_11">
+    {% for n in news %}
+      {{n}}
+    {% endfor %}
+</div>
+<div id="updates" class="grid_5">
+    Updates
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+#small_header {
+    position:fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#small_logo {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    background-color: #c0392b;
+    color: #ecf0f1;
+    font-size: 2em;
+    text-align: center;
+    height: 40px;
+    width:  250px;
+    float: left;
+}
+
+#logo {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    background-color: #c0392b;
+    color: #ecf0f1;
+    font-size: 5em;
+    text-align: center;
+    height: 200px;
+    width:  250px;
+    float: left;
+}
+
+#banner {
+    height: 160px;
+}
+
+#nav {
+    background-color: #34495e;
+    height: 40px;
+}
+
+#nav li {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    display: inline;
+    color: #bdc3c7;
+    font-size: 2em;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#nav li:hover {
+    background-color: #2c3e50;
+}
+
+#nav ul {
+    margin: 0px;
+}
+
+#news_container {
+    background-color:#F5F0EB;
+    height: 2000px;
+}
+
+#updates {
+    background-color: #8e44ad;
+    border-radius: 5px;
+}
