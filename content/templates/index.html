@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% load markdown_deux_tags %}
 {% block news %}
-<div id="news" class="col-md-8">
+<div class="col-md-8">
     {% for n in news %}
-        {{n.text|markdown}}
+        <h3>{{n.title}}</h3>
+        <h5>{{n.author}} - {{n.publish_date}}</h5>
+        <div id="news">
+            {{n.text|markdown:"news"}}
+        </div>
     {% endfor %}
 </div>
 <div id="updates" class="col-md-4">

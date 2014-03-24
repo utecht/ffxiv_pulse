@@ -83,3 +83,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MARKDOWN_DEUX_STYLES = {
+    "default": {
+        "extras": {
+            "code-friendly": None,
+        },
+        "safe_mode": "escape",
+    },
+    "news": {
+        "extras":{
+            "fenced-code-blocks":None,
+            }
+       }
+}
+
