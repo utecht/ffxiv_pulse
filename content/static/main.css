@@ -56,19 +56,32 @@
 }
 
 #news_container {
-    background-color:#F5F0EB;
     height: 2000px;
 }
 
+body {
+    background-color: #ecf0f1;
+}
+
 #updates {
-    background-color: #8e44ad;
-    border-radius: 5px;
+    background-color: #9b59b6;
+    border: 2px solid #8e44ad;
+    margin-top: 20px;
+}
+
+#updates ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#updates a {
+    color: black;
 }
 
 blockquote {
     padding: 0 0 0 15px;
     margin: 0 0 18px;
-    border-left: 5px solid #8e44ad;
+    border-left: 5px solid #9b59b6;
     font-size: 1em;
 }
 

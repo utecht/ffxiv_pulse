@@ -3,14 +3,25 @@
 {% block news %}
 <div class="col-md-8">
     {% for n in news %}
-        <h3>{{n.title}}</h3>
-        <h5>{{n.author}} - {{n.publish_date}}</h5>
-        <div id="news">
-            {{n.text|markdown:"news"}}
-        </div>
+    <a href="{% url "news" n.id %}"><h3>{{n.title}}</h3></a>
+    <h5>{{n.author}} - {{n.publish_date}}</h5>
+    <div id="news">
+        {{n.text|markdown:"news"}}
+    </div>
     {% endfor %}
 </div>
-<div id="updates" class="col-md-4">
-    Updates
+<div id="news-right" class="col-md-4">
+    <div id="feature-preview">
+        Current Feature
+        {{feature}}
+    </div>
+    <div id="updates">
+        <h3 style="color:snow;">Updates</h3>
+        <ul>
+            {% for u in updates %}
+            <li><a href="{{u.url}}">{{u.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 {% endblock %}

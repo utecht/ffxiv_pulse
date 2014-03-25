@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load markdown_deux_tags %}
+{% block news %}
+<div class="col-md-12">
+    <h3>{{n.title}}</h3>
+    <h5>{{n.author}} - {{n.publish_date}}</h5>
+    <div id="news">
+        {{n.text|markdown:"news"}}
+    </div>
+</div>
+{% endblock %}
